@@ -1,0 +1,14 @@
+name: IAC Scan 
+on: 
+  workflow_dispatch:
+    inputs:
+    
+jobs:
+  iac_scan:
+    runs-on: ubuntu-latest
+    name: IaC Scan Connector
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+            uses: actions/checkout@v2
