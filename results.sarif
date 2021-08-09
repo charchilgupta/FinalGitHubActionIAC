@@ -43,7 +43,21 @@
                 }
               }
             }
-          ]
+          ],
+	  "properties": {
+                                "description": "Header files should contain header guards (#defines to prevent\n              the file from being included twice). This prevents errors and\n              inefficiencies caused by repeated inclusion.",
+                                "id": "cpp/missing-header-guard",
+                                "kind": "problem",
+                                "name": "Missing header guard",
+                                "precision": "high",
+                                "problem.severity": "warning",
+                                "tags": [
+                                    "efficiency",
+                                    "maintainability",
+                                    "modularity",
+                                    "external/jsf"
+                                ]
+                            },
         },
 		{
           "ruleId": "CKV_AWS_24",
