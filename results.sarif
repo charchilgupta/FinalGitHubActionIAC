@@ -19,7 +19,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": '/security-group.tf',
+                  "uri": "/security-group.tf",
                   "index": 0
                 },
                 "region": {
@@ -40,7 +40,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": '/security-group.tf',
+                  "uri": "/security-group.tf",
                   "index": 0
                 },
                 "region": {
