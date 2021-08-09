@@ -28,7 +28,11 @@
                 }
               }
             }
-          ]
+          ],
+		  "help": {
+				"text": "Some help text here",
+				"markdown": "Some help text here"
+			}
         },
 		{
           "ruleId": "CKV_AWS_24",
