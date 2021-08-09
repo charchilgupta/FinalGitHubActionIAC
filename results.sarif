@@ -13,7 +13,9 @@
                 "text": "Ensure every security groups rule has a description"
               },
               "helpUri": "https://eslint.org/docs/rules/no-unused-vars",
-			  "help" : "help text",
+			  "help" : { 
+			    "text" : "help text"
+			  },
               "properties": {
                 "category": "Variables"
               }
@@ -41,11 +43,7 @@
                 }
               }
             }
-          ],
-		  "help": {
-				"text": "Some help text here",
-				"markdown": "Some help text here"
-			}
+          ]
         },
 		{
           "ruleId": "CKV_AWS_24",
