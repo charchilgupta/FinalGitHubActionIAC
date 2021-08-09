@@ -1,41 +1,55 @@
 {
-  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
   "runs": [
     {
       "tool": {
         "driver": {
-          "name": "Tool Name",
-          "rules": [
-            {
-              "id": "R01"
-            }
-          ]
+          "name": "Qualys IaC"
         }
       },
       "results": [
         {
-          "ruleId": "R01",
+          "ruleId": "CKV_AWS_23",
+          "level": "error",
           "message": {
-            "text": "Result text. This result does not have a rule associated."
+            "text": "Ensure every security groups rule has a description"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "fileURI"
+                  "uri": '/security-group.tf',
+                  "index": 0
                 },
                 "region": {
-                  "startLine": 2,
-                  "startColumn": 7,
-                  "endColumn": 10
+                  "startLine": 1,
+                  "startColumn": 10
                 }
               }
             }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "39fa2ee980eb94b0:1"
-          }
+          ]
+        },
+		{
+          "ruleId": "CKV_AWS_24",
+          "level": "error",
+          "message": {
+            "text": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": '/security-group.tf',
+                  "index": 0
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 10
+                }
+              }
+            }
+          ]
         }
       ]
     }
