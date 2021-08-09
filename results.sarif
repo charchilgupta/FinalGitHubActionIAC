@@ -5,7 +5,20 @@
     {
       "tool": {
         "driver": {
-          "name": "Qualys IaC"
+          "name": "Qualys IaC",
+		   "rules": [
+            {
+              "id": "CKV_AWS_23",
+              "shortDescription": {
+                "text": "Ensure every security groups rule has a description"
+              },
+              "helpUri": "https://eslint.org/docs/rules/no-unused-vars",
+			  "help" : "help text",
+              "properties": {
+                "category": "Variables"
+              }
+            }
+          ]
         }
       },
       "results": [
